@@ -12,10 +12,8 @@ You can find some examples in the test fixtures.*/
 
 //SOLUTION:
 function humanReadable (sec) {
-    let hh = 0, mm = 0, ss = 0;
-
-    ss = (sec % 60) < 10 ?  '0' + (sec % 60): (sec % 60);
-    mm=Math.floor((sec%3600)/60) < 10 ? '0' + Math.floor((sec%3600)/60) : Math.floor((sec%3600)/60);
-    hh = (Math.floor((sec-ss)/3600)) < 10 ? '0'+(Math.floor((sec-ss)/3600)): (Math.floor((sec-ss)/3600))
+    let ss = (sec % 60) < 10 ?  '0' + (sec % 60): (sec % 60);
+    let mm=Math.floor((sec%3600)/60) < 10 ? '0' + Math.floor((sec%3600)/60) : Math.floor((sec%3600)/60);
+    let hh = (Math.floor((sec-ss)/3600)) < 10 ? '0'+(Math.floor((sec-ss)/3600)): (Math.floor((sec-ss)/3600))
     return `${hh}:${mm}:${ss}`;
 }
