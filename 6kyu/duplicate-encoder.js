@@ -37,4 +37,4 @@ function duplicateEncode(word){
     return word1;
 }
 
-console.log("Duplicate Encode: " + duplicateEncode("Success"))
+console.log("Duplicate Encode: " + duplicateEncode("Success"));
