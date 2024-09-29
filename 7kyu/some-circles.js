@@ -17,7 +17,6 @@ function sumCircles() {
     let result = 0;
     for(const n of arguments) {
         result += Math.PI * ((n / 2) ** 2);
-        result = result
     }
     return "We have this much circle: " + Math.round(result);
 }
