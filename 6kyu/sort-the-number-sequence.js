@@ -12,6 +12,7 @@ function sortSequence(sequence) {
     arr = arr.sort((a, b) => a-b);
     for (let j = 0; j<4; j+=1){
         for (let i = 0; i<sequence.length; i+=3) {
+            if (arr[j] === arr[j-1]) i+=4;
             if (sequence.slice(i, i+3).reduce((a,b)=>a+b) === arr[j]){
                 str.push(sequence.slice(i, i+3).sort((a,b) => a-b));
                 break;
