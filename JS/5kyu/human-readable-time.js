@@ -17,3 +17,5 @@ function humanReadable (sec) {
     let hh = (Math.floor((sec-ss)/3600)) < 10 ? '0'+(Math.floor((sec-ss)/3600)): (Math.floor((sec-ss)/3600))
     return `${hh}:${mm}:${ss}`;
 }
+
+console.log(1234)
